@@ -1,6 +1,6 @@
 from soccerplots.radar_chart import Radar
 
-# Parámetros y rangos
+# Metricas a comparar
 params = [
     'Pases Clave', '% Tiros a Puerta', 'Goles / Tiros', 'Recuperaciones',
     'Intercepciones', 'Regates Completados', '% Pases Éxitosos',
@@ -8,12 +8,13 @@ params = [
     'Pases Completados\n En Último Tercio'
 ]
 
+# Rango de valores
 ranges = [
     (0.0, 4), (0.0, 1), (0.00, 0.5), (0, 4.25), (0, 4.25),
     (0, 2.28), (0.0, 1), (0, 12), (0, 59), (0, 14.6)
 ]
 
-# Valores (asegúrate de que n1 y n2 existan)
+# Valores 
 values = [
     [
         a.loc[n1, 'Pases Clave'] / 6,
